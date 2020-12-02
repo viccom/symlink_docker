@@ -19,3 +19,5 @@ docker run -d --restart=always -p 8240:8240 -p 9200:9200 -p 9230:9230 -p 9231:92
 For example
 
 docker run -d --restart=always -p 8240:8240 -p 9200:9200 -p 9230:9230 -p 9231:9231 -p 2404:2404 -p 1996:1996/udp -p 2000:2000/udp -p 2005:2005/udp -p 2008:2008/udp --name symlink -v /mnt/sympad/data:/mnt/sympad/data viccomdong/symlink:latest
+
+docker run -d --restart=always --net=host --name symlink viccomdong/symlink:v2.9
