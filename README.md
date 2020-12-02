@@ -1,11 +1,14 @@
 # symlink_docker
-symlink_docker
 
-# How to pull this image
+## build symlink_docker image
+
+docker image build . -t viccomdong/symlink:latest
+
+## How to pull this image
 
 docker pull viccomdong/symlink
 
-# How to use this image
+## How to use this image
 
 Run Symlink
 
